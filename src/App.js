@@ -6,6 +6,8 @@ import HookCounterTwo from './components/useState/HookCounterTwo';
 import HookCounterThree from './components/useState/HookCounterThree';
 import ClassCounterTwo from './components/useState/ClassCounterTwo';
 import HookCounterFour from './components/useState/HookCounterFour';
+import ClassCounterOne from './components/useEffect/ClassCounterOne';
+import HookCounterOne from './components/useEffect/HookCounterOne';
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       {/* <HookCounter /> */}
       {/* <HookCounterTwo/> */}
       {/* <HookCounterThree /> */}
-      <HookCounterFour/>
+      {/* <HookCounterFour/> */}
+      {/* <ClassCounterOne/> */}
+      <HookCounterOne/>
     </div>
   );
 }
