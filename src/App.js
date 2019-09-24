@@ -16,25 +16,31 @@ import IntervalHookCounter from './components/useEffect/IntervalHookCounter';
 import DataFetching from './components/useEffect/DataFetching';
 import ComponentC from './components/useContext/ComponentC';
 
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      {/* <ClassCounter /> */}
-      {/* <ClassCounterTwo /> */}
-      {/* <HookCounter /> */}
-      {/* <HookCounterTwo/> */}
-      {/* <HookCounterThree /> */}
-      {/* <HookCounterFour/> */}
-      {/* <ClassCounterOne/> */}
-      {/* <HookCounterOne/> */}
-      {/* <ClassMouse/> */}
-      {/* <HookMouse/> */}
-      {/* <MouseContainer/> */}
-      {/* <IntervalCalssCounter/> */}
-      {/* <IntervalHookCounter/> */}
-      {/* <DataFetching/> */}
-      <ComponentC />
+      {/* <ClassCounter />
+      <ClassCounterTwo />
+      <HookCounter />
+      <HookCounterTwo/>
+      <HookCounterThree />
+      <HookCounterFour/>
+      <ClassCounterOne/>
+      <HookCounterOne/>
+      <ClassMouse/>
+      <HookMouse/>
+      <MouseContainer/>
+      <IntervalCalssCounter/>
+      <IntervalHookCounter/>
+      <DataFetching/> */}
+      <UserContext.Provider value={'Phumthawan'}>
+        <ChannelContext.Provider value={'Nokun'}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
