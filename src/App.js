@@ -18,9 +18,11 @@ import './App.css';
 // import CounterOne from './components/useReducer/CounterOne';
 // import CounterTwo from './components/useReducer/CounterTwo';
 // import CounterThree from './components/useReducer/CounterThree';
-import ComponentA from './components/useReducerWithuseContext/ComponentA'
-import ComponentB from './components/useReducerWithuseContext/ComponentB'
-import ComponentC from './components/useReducerWithuseContext/ComponentC'
+// import ComponentA from './components/useReducerWithuseContext/ComponentA'
+// import ComponentB from './components/useReducerWithuseContext/ComponentB'
+// import ComponentC from './components/useReducerWithuseContext/ComponentC'
+import DataFetchingOne from './components/useEffect/DataFetchingOne';
+import DataFetchingTwo from './components/useReducer/DataFetchingTwo';
 
 export const CountContext = React.createContext()
 
@@ -28,22 +30,22 @@ export const CountContext = React.createContext()
 // export const ChannelContext = React.createContext()
 
 
-const initialState = 0;
-const reducer = (state, action) => {
-  switch (action) {
-    case 'increment':
-      return state + 1
-    case 'decrement':
-      return state - 1
-    case 'reset':
-      return initialState
-    default:
-      return state
-  }
-}
+// const initialState = 0;
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case 'increment':
+//       return state + 1
+//     case 'decrement':
+//       return state - 1
+//     case 'reset':
+//       return initialState
+//     default:
+//       return state
+//   }
+// }
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState)
+  // const [count, dispatch] = useReducer(reducer, initialState)
 
   return (
     <div className="App">
@@ -71,14 +73,18 @@ function App() {
       {/* <CounterOne/> */}
       {/* <CounterTwo/> */}
       {/* <CounterThree/> */}
-      <CountContext.Provider
+
+      {/* <CountContext.Provider
         value={{ countState: count, countDispatch: dispatch }}
       >
         Count - {count}
         <ComponentA />
         <ComponentB />
         <ComponentC />
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+      
+      {/* <DataFetchingOne/> */}
+      <DataFetchingTwo/>
     </div>
   );
 }
