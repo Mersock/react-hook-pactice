@@ -1,7 +1,7 @@
 // import React, { useReducer } from 'react';
 import React from 'react';
 import './App.css';
-import ParentComponent from './components/useCallback/ParentComponent';
+// import ParentComponent from './components/useCallback/ParentComponent';
 // import ClassCounter from './components/useState/ClassCounter';
 // import HookCounter from './components/useState/HookCounter';
 // import HookCounterTwo from './components/useState/HookCounterTwo';
@@ -25,10 +25,12 @@ import ParentComponent from './components/useCallback/ParentComponent';
 // import ComponentC from './components/useReducerWithuseContext/ComponentC'
 // import DataFetchingOne from './components/useEffect/DataFetchingOne';
 // import DataFetchingTwo from './components/useReducer/DataFetchingTwo';
-import Counter from './components/useMemo/Counter';
-import FocusInput from './components/useRef/FocusInput';
+// import Counter from './components/useMemo/Counter';
+// import FocusInput from './components/useRef/FocusInput';
+import ClassTimer from './components/useRef/ClassTimer';
+import Hooktimer from './components/useRef/Hooktimer';
 
-export const CountContext = React.createContext()
+// export const CountContext = React.createContext()
 
 // export const UserContext = React.createContext()
 // export const ChannelContext = React.createContext()
@@ -94,7 +96,9 @@ function App() {
 
       {/* <Counter /> */}
 
-      <FocusInput />
+      {/* <FocusInput /> */}
+      <ClassTimer/>
+      <Hooktimer/>
     </div>
   );
 }
