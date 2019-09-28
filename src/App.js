@@ -25,6 +25,7 @@ import ParentComponent from './components/useCallback/ParentComponent';
 // import ComponentC from './components/useReducerWithuseContext/ComponentC'
 // import DataFetchingOne from './components/useEffect/DataFetchingOne';
 // import DataFetchingTwo from './components/useReducer/DataFetchingTwo';
+import Counter from './components/useMemo/Counter';
 
 export const CountContext = React.createContext()
 
@@ -84,11 +85,13 @@ function App() {
         <ComponentB />
         <ComponentC />
       </CountContext.Provider> */}
-      
+
       {/* <DataFetchingOne/> */}
       {/* <DataFetchingTwo/> */}
 
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+
+      <Counter />
     </div>
   );
 }
