@@ -26,6 +26,7 @@ import ParentComponent from './components/useCallback/ParentComponent';
 // import DataFetchingOne from './components/useEffect/DataFetchingOne';
 // import DataFetchingTwo from './components/useReducer/DataFetchingTwo';
 import Counter from './components/useMemo/Counter';
+import FocusInput from './components/useRef/FocusInput';
 
 export const CountContext = React.createContext()
 
@@ -91,7 +92,9 @@ function App() {
 
       {/* <ParentComponent/> */}
 
-      <Counter />
+      {/* <Counter /> */}
+
+      <FocusInput />
     </div>
   );
 }
