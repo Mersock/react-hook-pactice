@@ -31,8 +31,9 @@ import './App.css';
 // import Hooktimer from './components/useRef/Hooktimer';
 // import DockTitleOne from './components/customHook/DockTitleOne';
 // import DockTitleTwo from './components/customHook/DockTitleTwo';
-import CounterOne from './components/customHook/CounterOne';
-import CounterTwo from './components/customHook/CounterTwo';
+// import CounterOne from './components/customHook/CounterOne';
+// import CounterTwo from './components/customHook/CounterTwo';
+import UserForm from './components/customHook/UserForm';
 
 // export const CountContext = React.createContext()
 
@@ -108,8 +109,10 @@ function App() {
       {/* <DockTitleOne/>
       <DockTitleTwo/> */}
 
-      <CounterOne/>
-      <CounterTwo/>
+      {/* <CounterOne/>
+      <CounterTwo/> */}
+
+      <UserForm/>
     </div>
   );
 }
