@@ -27,8 +27,12 @@ import './App.css';
 // import DataFetchingTwo from './components/useReducer/DataFetchingTwo';
 // import Counter from './components/useMemo/Counter';
 // import FocusInput from './components/useRef/FocusInput';
-import ClassTimer from './components/useRef/ClassTimer';
-import Hooktimer from './components/useRef/Hooktimer';
+// import ClassTimer from './components/useRef/ClassTimer';
+// import Hooktimer from './components/useRef/Hooktimer';
+// import DockTitleOne from './components/customHook/DockTitleOne';
+// import DockTitleTwo from './components/customHook/DockTitleTwo';
+import CounterOne from './components/customHook/CounterOne';
+import CounterTwo from './components/customHook/CounterTwo';
 
 // export const CountContext = React.createContext()
 
@@ -97,8 +101,15 @@ function App() {
       {/* <Counter /> */}
 
       {/* <FocusInput /> */}
-      <ClassTimer/>
-      <Hooktimer/>
+
+      {/* <ClassTimer/>
+      <Hooktimer/> */}
+
+      {/* <DockTitleOne/>
+      <DockTitleTwo/> */}
+
+      <CounterOne/>
+      <CounterTwo/>
     </div>
   );
 }
